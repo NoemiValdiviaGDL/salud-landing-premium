@@ -5,6 +5,10 @@ import PiernasPic from "../assets/images/piernas-gallery.jpg";
 import LaserGallery from "../assets/images/laser-gallery.jpg";
 import AcidoPic from "../assets/images/acido-gallery.jpg";
 import PerfilPic from "../assets/images/perfil.jpg";
+import galleryPiernas from "../assets/images/results-piernas.jpg";
+import galleryBotox from "../assets/images/results-botox.jpg";
+import gallerAcido from "../assets/images/results-acido.jpg";
+
 export const cosmetologaData = {
   // Información General & Branding
   brand: {
@@ -14,7 +18,7 @@ export const cosmetologaData = {
     logoText: "Dra. Valeria Mungía",
     accentColor: "#D8B4FE", // Pastel Violet
     whatsappNumber: "523300000000",
-    calComUrl: "https://cal.com/dra-valeria-munguia/consulta",
+    calComUrl: "https://cal.com/noemi-valdivia-garcia-etbevl/cosmetologia",
   },
 
   // Hero Section
@@ -43,7 +47,7 @@ export const cosmetologaData = {
         "Atenúa líneas de expresión en frente, entrecejo y patas de gallo manteniendo tu gesticulación natural.",
       duration: "45 min",
       price: "$3,500 MXN",
-      mpPaymentLink: "https://mpago.la/pos/botox-reserva",
+      mpPaymentLink: "https://mpago.la/2mPhnYV",
       features: [
         "Efecto visible en 3-5 días",
         "Resultados duraderos de 4 a 6 meses",
@@ -60,7 +64,7 @@ export const cosmetologaData = {
         "Restaura el volumen en labios, pómulos y surcos nasogenianos con hidratación profunda.",
       duration: "60 min",
       price: "$4,800 MXN",
-      mpPaymentLink: "https://mpago.la/pos/rellenos-reserva",
+      mpPaymentLink: "https://mpago.la/2mPhnYV",
       features: [
         "Definición y simetría facial",
         "Resultados inmediatos",
@@ -77,7 +81,7 @@ export const cosmetologaData = {
         "Efecto tensor inmediato que estimula la producción natural de colágeno a mediano plazo.",
       duration: "60 min",
       price: "$6,500 MXN",
-      mpPaymentLink: "https://mpago.la/pos/hilos-reserva",
+      mpPaymentLink: "https://mpago.la/2mPhnYV",
       features: [
         "Reposicionamiento de tejidos flácidos",
         "Estimulación continua de colágeno",
@@ -94,7 +98,7 @@ export const cosmetologaData = {
         "Renovación celular para atenuar manchas, cicatrices de acné, poros abiertos y textura irregular.",
       duration: "50 min",
       price: "$2,200 MXN",
-      mpPaymentLink: "https://mpago.la/pos/laser-reserva",
+      mpPaymentLink: "https://mpago.la/2mPhnYV",
       features: [
         "Unificación del tono cutáneo",
         "Estimulación profunda de la dermis",
@@ -111,7 +115,7 @@ export const cosmetologaData = {
         "Tecnología de luz y láser para depilación definitiva y tratamiento no invasivo de arañitas vasculares.",
       duration: "45 min",
       price: "$1,800 MXN",
-      mpPaymentLink: "https://mpago.la/pos/vello-varices-reserva",
+      mpPaymentLink: "https://mpago.la/2mPhnYV",
       features: [
         "Reducción progresiva y permanente del vello",
         "Tratamiento efectivo de microvarices y arañitas",
@@ -127,29 +131,21 @@ export const cosmetologaData = {
     {
       id: 1,
       treatment: "Relleno de Labios",
-      beforeImg:
-        "https://images.unsplash.com/photo-1588516903720-8ceb67f9ef84?auto=format&fit=crop&q=80&w=500",
-      afterImg:
-        "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&q=80&w=500",
+      beforeImg: gallerAcido,
+
       description: "Perfilado y volumen sutil con 1ml de ácido hialurónico.",
     },
     {
       id: 2,
       treatment: "Toxina Botulínica en Frente",
-      beforeImg:
-        "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=500",
-      afterImg:
-        "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=500",
+      beforeImg: galleryBotox,
       description:
         "Suavizado de líneas de expresión dinámicas a los 14 días post-aplicación.",
     },
     {
       id: 3,
       treatment: "Láser para Arañitas Vasculares",
-      beforeImg:
-        "https://images.unsplash.com/photo-1512290900673-05041a3d6f1c?auto=format&fit=crop&q=80&w=500",
-      afterImg:
-        "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&q=80&w=500",
+      beforeImg: galleryPiernas,
       description:
         "Atenuación de capilares tras 2 sesiones de tratamiento láser.",
     },
@@ -182,7 +178,7 @@ export const cosmetologaData = {
       "Efectivo (OXXO)",
       "Mercado Pago Wallet",
     ],
-    directPaymentLink: "https://mpago.la/pos/reserva-general-cosmetologia",
+    directPaymentLink: "https://mpago.la/2mPhnYV",
   },
 
   // Reseñas / Testimonios
