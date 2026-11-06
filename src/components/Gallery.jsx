@@ -7,7 +7,7 @@ export default function Gallery({ gallery }) {
   return (
     <section
       id="galeria"
-      className="py-24 bg-gradient-to-b from-slate-900 via-purple-950 to-slate-950 text-white relative overflow-hidden"
+      className="py-24 bg-gradient-to-b from-slate-950 via-purple-950 to-slate-900 text-white relative overflow-hidden"
     >
       {/* Luces de fondo decorativas en violeta y rosa pastel */}
       <div className="absolute top-1/4 -left-20 w-96 h-96 bg-pink-500/10 rounded-full blur-3xl pointer-events-none" />

@@ -1,13 +1,14 @@
-import HeroPic from "../assets/images/hero-pic.avif";
+import HeroPic from "../assets/images/hero-pic.webp";
 import HilosPic from "../assets/images/hilos.jpg";
 import BotoxPic from "../assets/images/botox-gallery.avif"; // Corregida extensión .jpg
 import PiernasPic from "../assets/images/piernas-gallery.jpg";
 import LaserGallery from "../assets/images/laser-gallery.jpg";
 import AcidoPic from "../assets/images/acido-gallery.jpg";
-import PerfilPic from "../assets/images/perfil.jpg";
+import PerfilPic from "../assets/images/perfil.avif";
 import galleryPiernas from "../assets/images/results-piernas.jpg";
 import galleryBotox from "../assets/images/results-botox.jpg";
 import gallerAcido from "../assets/images/results-acido.jpg";
+import galleryPeeling from "../assets/images/peeling-gallery.jpg";
 
 export const cosmetologaData = {
   // Información General & Branding
@@ -17,7 +18,7 @@ export const cosmetologaData = {
     tagline: "Resalta tu belleza natural con ciencia, precisión y elegancia.",
     logoText: "Dra. Valeria Mungía",
     accentColor: "#D8B4FE", // Pastel Violet
-    whatsappNumber: "523300000000",
+    whatsappNumber: "3327825329",
     calComUrl: "https://cal.com/noemi-valdivia-garcia-etbevl/cosmetologia",
   },
 
@@ -123,6 +124,22 @@ export const cosmetologaData = {
       ],
       icon: "Feather",
       image: PiernasPic,
+    },
+    {
+      id: "dermapen-peeling",
+      name: "Peeling Médico & Microneedling",
+      category: "Avanzado",
+      shortDesc:
+        "Inducción de colágeno mediante microagujas y ácidos médicos para regenerar manchas, textura y luminosidad.",
+      duration: "50 min",
+      price: "$2,500 MXN",
+      features: [
+        "Estimulación intensiva de fibroblasto",
+        "Atenuación de hiperpigmentación y poros",
+        "Efecto glow inmediato post-recuperación",
+      ],
+      icon: "Sparkles",
+      image: galleryPeeling,
     },
   ],
 

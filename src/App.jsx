@@ -9,6 +9,7 @@ import BookingAndPayment from "./components/BookingAndPayment";
 import Reviews from "./components/Reviews";
 import FAQ from "./components/FAQ";
 import Footer from "./components/Footer";
+import FloatingActions from "./components/FloatingActions";
 
 import { cosmetologaData } from "./data/cosmetologaData";
 
@@ -33,13 +34,11 @@ export default function App() {
       <Services services={services} />
       <Gallery gallery={gallery} />
       <AboutMe aboutMe={aboutMe} />
-
-      {/* Sección fija de Agendamiento y Pasarela de Pago */}
-      <BookingAndPayment payment={payment} brand={brand} services={services} />
-
       <Reviews reviews={reviews} />
       <FAQ faq={faq} />
+      <BookingAndPayment brand={brand} />
       <Footer brand={brand} footer={footer} />
+      <FloatingActions brand={brand} />
     </div>
   );
 }

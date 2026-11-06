@@ -7,7 +7,7 @@ export default function Reviews({ reviews }) {
   return (
     <section
       id="resenas"
-      className="py-24 bg-slate-950 text-white relative overflow-hidden"
+      className="py-24 bg-gradient-to-b from-slate-950 via-purple-950 to-slate-900 text-white relative overflow-hidden"
     >
       {/* Luz ambiental central */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-purple-600/10 rounded-full blur-[120px] pointer-events-none" />
