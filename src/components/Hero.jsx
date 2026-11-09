@@ -11,86 +11,94 @@ export default function Hero({ hero, brand }) {
   if (!hero) return null;
 
   return (
-    <section className="py-24 bg-gradient-to-b from-slate-300 via-purple-950 to-slate-900 text-white relative overflow-hidden">
-      {/* Luz ambiental sutil en el fondo */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[350px] bg-pink-200/30 rounded-full blur-[140px] pointer-events-none" />
+    <section className="relative py-20 lg:py-28 bg-[#FFF4F8] overflow-hidden">
+      {/* Resplandores difuminados con la paleta */}
+      <div className="absolute top-10 left-1/2 -translate-x-1/2 w-[700px] h-[400px] bg-gradient-to-tr from-[#FFA5C4]/20 via-[#8A96C7]/20 to-[#A782C8]/20 rounded-full blur-[140px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          {/* Copywriter de Conversión */}
           <div>
-            <div className="inline-flex items-center gap-2 bg-white/80 text-purple-900 text-xs font-bold tracking-wider uppercase px-3.5 py-1.5 rounded-full mb-6 border border-purple-200/60 shadow-sm">
-              <Sparkles className="w-3.5 h-3.5 text-pink-500" />
+            <div className="inline-flex items-center gap-2 bg-white/90 text-[#A782C8] text-xs font-bold tracking-widest uppercase px-4 py-2 rounded-full mb-6 border border-[#A782C8]/30 shadow-sm backdrop-blur-md">
+              <Sparkles className="w-4 h-4 text-[#FFA5C4]" />
               {hero.badge}
             </div>
 
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-serif font-extrabold text-purple-950 leading-[1.15] mb-6">
+            {/* Título de Impacto con brillo difuminado */}
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-serif font-black text-[#3A2E4C] leading-[1.15] mb-6 tracking-tight">
               Recupera la frescura y juventud de tu piel{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-800 via-pink-600 to-purple-600">
+              <span className="relative inline-block text-transparent bg-clip-text bg-gradient-to-r from-[#A782C8] via-[#FFA5C4] to-[#8A96C7] drop-shadow-[0_2px_15px_rgba(255,165,196,0.5)]">
                 sin perder tu esencia
               </span>
             </h1>
 
-            <p className="text-base sm:text-lg text-slate-100 mb-8 leading-relaxed">
+            <p className="text-base sm:text-lg text-[#3A2E4C]/80 mb-8 leading-relaxed font-sans font-medium">
               Tratamientos médicos no invasivos con resultados visibles desde la
-              primera sesión.
+              primera sesión. Diseñados a la medida de tus necesidades
+              cosmetológicas.
             </p>
 
-            <div className="flex items-center gap-3 mb-8 bg-white/70 backdrop-blur-sm p-3 rounded-2xl border border-purple-100 shadow-sm max-w-md">
+            {/* Micro-prueba social */}
+            <div className="flex items-center gap-3 mb-8 bg-white/80 backdrop-blur-md p-3.5 rounded-2xl border border-[#DCE2E9] shadow-sm max-w-md">
               <div className="flex -space-x-2">
                 <img
-                  className="w-9 h-9 rounded-full border-2 border-white object-cover"
+                  className="w-10 h-10 rounded-full border-2 border-white object-cover shadow-sm"
                   src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=120"
                   alt="Paciente"
                 />
                 <img
-                  className="w-9 h-9 rounded-full border-2 border-white object-cover"
+                  className="w-10 h-10 rounded-full border-2 border-white object-cover shadow-sm"
                   src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=120"
                   alt="Paciente"
                 />
                 <img
-                  className="w-9 h-9 rounded-full border-2 border-white object-cover"
+                  className="w-10 h-10 rounded-full border-2 border-white object-cover shadow-sm"
                   src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&q=80&w=120"
                   alt="Paciente"
                 />
               </div>
-              <div className="text-xs text-slate-700 font-medium">
-                <div className="flex items-center text-amber-500">
+              <div className="text-xs text-[#3A2E4C] font-semibold">
+                <div className="flex items-center text-amber-400">
                   {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-3.5 h-3.5 fill-current" />
+                    <Star key={i} className="w-4 h-4 fill-current" />
                   ))}
-                  <span className="ml-1.5 font-bold text-purple-950">
-                    4.9/5
+                  <span className="ml-1.5 font-bold text-[#3A2E4C]">
+                    4.9 / 5.0
                   </span>
                 </div>
-                <span>Más de 1,200 pacientes felices en Zapopan</span>
+                <span className="text-[#3A2E4C]/70">
+                  Más de 1,200 pacientes felices en Zapopan
+                </span>
               </div>
             </div>
 
+            {/* CTA Principal de Embudo */}
             <div className="flex flex-col sm:flex-row gap-4 mb-10">
               <a
                 href="#agendar"
-                className="bg-purple-950 hover:bg-purple-900 text-white font-bold px-8 py-4 rounded-xl text-center shadow-md transition-all flex items-center justify-center gap-2 group text-base"
+                className="bg-gradient-to-r from-[#A782C8] to-[#FFA5C4] hover:from-[#966fc0] hover:to-[#ff8cb3] text-white font-extrabold px-8 py-4 rounded-2xl text-center shadow-lg shadow-[#FFA5C4]/30 hover:shadow-xl transition-all duration-300 flex items-center justify-center gap-3 group text-base uppercase tracking-wider"
               >
-                <Calendar className="w-5 h-5 text-pink-200" />
+                <Calendar className="w-5 h-5 text-white" />
                 Agendar Cita Directa
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </a>
             </div>
 
-            <div className="flex items-center gap-6 text-xs font-semibold text-slate-300">
-              <span className="flex items-center gap-1.5">
-                <ShieldCheck className="w-4 h-4 text-purple-300" /> Reserva 100%
-                Segura
+            <div className="flex items-center gap-6 text-xs font-bold text-[#3A2E4C]/70">
+              <span className="flex items-center gap-2">
+                <ShieldCheck className="w-4 h-4 text-[#A782C8]" /> Cita 100%
+                Personalizada
               </span>
-              <span className="flex items-center gap-1.5">
-                <ShieldCheck className="w-4 h-4 text-purple-300" /> Sin
+              <span className="flex items-center gap-2">
+                <ShieldCheck className="w-4 h-4 text-[#A782C8]" /> Sin
                 Incapacidad
               </span>
             </div>
           </div>
 
+          {/* Fotografía Destacada */}
           <div className="relative">
-            <div className="aspect-[4/5] rounded-3xl overflow-hidden shadow-xl relative z-10 border-4 border-white bg-white">
+            <div className="aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl relative z-10 border-4 border-white bg-white">
               <img
                 src={hero.heroImage}
                 alt={brand?.name}
@@ -98,13 +106,14 @@ export default function Hero({ hero, brand }) {
               />
             </div>
 
-            <div className="absolute -bottom-6 -left-4 sm:-left-6 bg-white/95 backdrop-blur-md p-5 rounded-2xl shadow-lg z-20 max-w-xs border border-purple-100">
-              <p className="text-xs font-bold text-purple-950 uppercase tracking-wider mb-1">
+            {/* Tag Flotante Persuasivo */}
+            <div className="absolute -bottom-6 -left-4 sm:-left-6 bg-white/95 backdrop-blur-md p-5 rounded-2xl shadow-xl z-20 max-w-xs border border-[#DCE2E9]">
+              <p className="text-xs font-black text-[#A782C8] uppercase tracking-widest mb-1">
                 Resultado Natural
               </p>
-              <p className="text-xs text-slate-600 leading-relaxed">
-                "Suavizamos líneas de expresión sin congelar el rostro ni
-                alterar tu mirada."
+              <p className="text-xs text-[#3A2E4C]/80 leading-relaxed font-medium">
+                "Suavizamos líneas de expresión manteniendo tu gesticulación
+                natural."
               </p>
             </div>
           </div>

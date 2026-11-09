@@ -3,40 +3,34 @@ import { Sparkles, Clock } from "lucide-react";
 
 export default function BannerUrgencia() {
   return (
-    <div className="relative overflow-hidden bg-gradient-to-r from-purple-950 via-purple-900 to-pink-900 text-white py-5.5 px-4 text-center text-xs sm:text-sm font-medium flex items-center justify-center gap-2 shadow-sm border-b border-pink-400/20">
-      {/* Efecto de Destello / Shine de luz animado */}
+    <div className="relative overflow-hidden bg-gradient-to-r from-[#A782C8] via-[#FFA5C4] to-[#A782C8] text-white py-3 px-4 text-center text-xs sm:text-sm font-semibold flex items-center justify-center gap-2 shadow-md">
+      {/* Destello animado */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
-        <div className="w-1/2 h-full bg-gradient-to-r from-transparent via-white/15 to-transparent -skew-x-12 -translate-x-full animate-[shine_4s_infinite_ease-in-out]" />
+        <div className="w-1/2 h-full bg-gradient-to-r from-transparent via-white/30 to-transparent -skew-x-12 -translate-x-full animate-[shine_4s_infinite_ease-in-out]" />
       </div>
 
-      {/* Contenido del Banner */}
-      <Sparkles className="w-4 h-4 text-pink-300 animate-pulse shrink-0 relative z-10" />
+      <Sparkles className="w-4 h-4 text-white animate-pulse shrink-0 relative z-10" />
 
-      <span className="relative z-10">
-        <strong className="text-pink-200">Promoción de Lanzamiento:</strong>{" "}
+      <span className="relative z-10 text-white font-medium">
+        <strong className="font-extrabold uppercase tracking-wider text-white">
+          Promoción de Lanzamiento:
+        </strong>{" "}
         Agenda tu valoración este mes y obtén{" "}
-        <strong className="text-pink-200 underline decoration-pink-400/50 underline-offset-2">
+        <strong className="underline decoration-white/70 underline-offset-4 font-black">
           $500 MXN abonables
         </strong>{" "}
         a tu tratamiento.
       </span>
 
-      <span className="hidden md:inline-flex items-center gap-1 bg-white/15 backdrop-blur-sm px-10.5 py-0.5 rounded-full text-[11px] ml-2 border border-white/10 relative z-10">
-        <Clock className="w-3 h-3 text-pink-300" /> Pocos cupos disponibles
+      <span className="hidden md:inline-flex items-center gap-1 bg-white/20 backdrop-blur-md px-3 py-1 rounded-full text-[11px] font-bold ml-2 border border-white/30 relative z-10 text-white">
+        <Clock className="w-3.5 h-3.5" /> ÚLTIMOS CUPOS
       </span>
 
-      {/* Definición de la animación de destello para Tailwind */}
       <style>{`
         @keyframes shine {
-          0% {
-            transform: translateX(-100%) skewX(-12deg);
-          }
-          30% {
-            transform: translateX(250%) skewX(-12deg);
-          }
-          100% {
-            transform: translateX(250%) skewX(-12deg);
-          }
+          0% { transform: translateX(-100%) skewX(-12deg); }
+          30% { transform: translateX(250%) skewX(-12deg); }
+          100% { transform: translateX(250%) skewX(-12deg); }
         }
       `}</style>
     </div>

@@ -11,53 +11,47 @@ export default function FAQ({ faq }) {
   };
 
   return (
-    <section
-      id="faq"
-      className="py-24 bg-slate-950 text-white relative overflow-hidden"
-    >
+    <section id="faq" className="py-24 bg-[#FFF4F8] relative overflow-hidden">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        {/* Encabezado FAQ */}
         <div className="text-center mb-16">
-          <div className="inline-flex items-center gap-2 bg-pink-500/10 text-pink-300 text-xs font-bold tracking-widest uppercase px-4 py-1.5 rounded-full border border-pink-500/20 backdrop-blur-md mb-4 shadow-lg shadow-pink-500/10">
-            <Sparkles className="w-3.5 h-3.5 text-pink-400" />
+          <div className="inline-flex items-center gap-2 bg-white text-[#A782C8] text-xs font-bold tracking-widest uppercase px-4 py-2 rounded-full border border-[#DCE2E9] shadow-sm mb-4">
+            <Sparkles className="w-3.5 h-3.5 text-[#FFA5C4]" />
             Resuelve tus Dudas
           </div>
-          <h2 className="text-3xl sm:text-5xl font-serif font-extrabold text-white leading-tight mb-4">
+          <h2 className="text-3xl sm:text-5xl font-serif font-black text-[#3A2E4C]">
             Preguntas{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-400 via-purple-300 to-indigo-300">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#A782C8] via-[#FFA5C4] to-[#8A96C7] drop-shadow-[0_2px_10px_rgba(255,165,196,0.5)]">
               Frecuentes
             </span>
           </h2>
-          <p className="text-slate-300 text-base sm:text-lg">
-            Todo lo que necesitas saber antes de tu primera consulta o
-            tratamiento.
+          <p className="text-[#3A2E4C]/80 text-base sm:text-lg mt-3 font-medium">
+            Todo lo que necesitas saber antes de tu primera consulta.
           </p>
         </div>
 
-        {/* Lista de Acordeones */}
         <div className="space-y-4">
           {faq.map((item, idx) => (
             <div
               key={idx}
-              className="bg-slate-900/80 backdrop-blur-xl rounded-2xl border border-purple-500/20 overflow-hidden transition-all duration-300 hover:border-pink-500/40"
+              className="bg-white rounded-2xl border border-[#DCE2E9] shadow-sm overflow-hidden transition-all duration-300 hover:border-[#FFA5C4]"
             >
               <button
                 onClick={() => toggleFaq(idx)}
-                className="w-full p-6 text-left font-bold text-white flex items-center justify-between gap-4 text-sm sm:text-base"
+                className="w-full p-6 text-left font-bold text-[#3A2E4C] flex items-center justify-between gap-4 text-sm sm:text-base font-serif"
               >
                 <span className="flex items-center gap-3">
-                  <HelpCircle className="w-5 h-5 text-pink-400 shrink-0" />
+                  <HelpCircle className="w-5 h-5 text-[#A782C8] shrink-0" />
                   {item.question}
                 </span>
                 {openFaq === idx ? (
-                  <ChevronUp className="w-5 h-5 text-pink-400 shrink-0" />
+                  <ChevronUp className="w-5 h-5 text-[#FFA5C4] shrink-0" />
                 ) : (
-                  <ChevronDown className="w-5 h-5 text-slate-400 shrink-0" />
+                  <ChevronDown className="w-5 h-5 text-[#8A96C7] shrink-0" />
                 )}
               </button>
 
               {openFaq === idx && (
-                <div className="px-6 pb-6 text-slate-300 text-sm border-t border-purple-500/15 pt-4 leading-relaxed bg-purple-950/20">
+                <div className="px-6 pb-6 text-[#3A2E4C]/80 text-sm border-t border-[#DCE2E9] pt-4 leading-relaxed font-medium bg-[#FFF4F8]/40">
                   {item.answer}
                 </div>
               )}

@@ -181,23 +181,6 @@ export const cosmetologaData = {
     image: PerfilPic,
   },
 
-  // Pasarela & Pago (Mercado Pago)
-  payment: {
-    title: "Reserva Tu Valoración o Procedimiento",
-    subtitle:
-      "Asegura tu horario agendando en el calendario y realizando tu anticipo/pago de forma 100% segura mediante Mercado Pago.",
-    mpDepositAmount: "$500 MXN",
-    depositNote:
-      "El costo abonado en línea se descuenta del total de tu procedimiento el día de tu cita.",
-    acceptedMethods: [
-      "Tarjetas de Crédito/Débito",
-      "Transferencia SPEI",
-      "Efectivo (OXXO)",
-      "Mercado Pago Wallet",
-    ],
-    directPaymentLink: "https://mpago.la/2mPhnYV",
-  },
-
   // Reseñas / Testimonios
   reviews: [
     {
@@ -234,9 +217,9 @@ export const cosmetologaData = {
         "La mayoría de nuestros tratamientos son ambulatorios y de mínima invasión, lo que significa que puedes reincorporarte a tu rutina diaria inmediatamente después de la sesión.",
     },
     {
-      question: "¿Cómo funciona el proceso de reserva y pago con Mercado Pago?",
+      question: "¿Cómo funciona el proceso de reserva?",
       answer:
-        "Puedes seleccionar tu horario disponible en nuestro calendario interactivo de Cal.com y posteriormente completar tu anticipo o pago total con el botón de Mercado Pago. Tu cita quedará confirmada automáticamente.",
+        "Puedes revisar los horaios disponibles en nuestro calendario en tiempo real, comunicarte via WhatsApp o llamada para agendar",
     },
     {
       question: "¿Los tratamientos con láser duelan?",
@@ -246,7 +229,7 @@ export const cosmetologaData = {
     {
       question: "¿Puedo cancelar o reagendar mi cita?",
       answer:
-        "Sí, puedes reagendar sin costo notificando con al menos 24 horas de anticipación a través del enlace de Cal.com o por WhatsApp.",
+        "Sí, puedes reagendar sin costo notificando con al menos 24 horas de anticipación a través de WhatsApp o llamada.",
     },
   ],
 

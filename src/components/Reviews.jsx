@@ -7,64 +7,59 @@ export default function Reviews({ reviews }) {
   return (
     <section
       id="resenas"
-      className="py-24 bg-gradient-to-b from-slate-950 via-purple-950 to-slate-900 text-white relative overflow-hidden"
+      className="py-24 bg-[#FFF4F8] relative overflow-hidden"
     >
-      {/* Luz ambiental central */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-purple-600/10 rounded-full blur-[120px] pointer-events-none" />
-
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        {/* Encabezado Principal */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="inline-flex items-center gap-2 bg-pink-500/10 text-pink-300 text-xs font-bold tracking-widest uppercase px-4 py-1.5 rounded-full border border-pink-500/20 backdrop-blur-md mb-4 shadow-lg shadow-pink-500/10">
-            <Sparkles className="w-3.5 h-3.5 text-pink-400" />
+          <div className="inline-flex items-center gap-2 bg-white text-[#A782C8] text-xs font-bold tracking-widest uppercase px-4 py-2 rounded-full border border-[#DCE2E9] shadow-sm mb-4">
+            <Sparkles className="w-3.5 h-3.5 text-[#FFA5C4]" />
             Experiencias Reales
           </div>
-          <h2 className="text-3xl sm:text-5xl font-serif font-extrabold text-white leading-tight mb-4">
-            Lo Que Dicen Nuestros{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-400 via-purple-300 to-indigo-300">
+          <h2 className="text-3xl sm:text-5xl font-serif font-black text-[#3A2E4C]">
+            Lo Que Dicen Nuestras{" "}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#A782C8] via-[#FFA5C4] to-[#8A96C7] drop-shadow-[0_2px_10px_rgba(255,165,196,0.5)]">
               Pacientes
             </span>
           </h2>
-          <p className="text-slate-300 text-base sm:text-lg">
-            La confianza y tranquilidad de quienes ya transformaron su piel con
-            nosotros.
+          <p className="text-[#3A2E4C]/80 text-base sm:text-lg mt-3 font-medium">
+            La tranquilidad de quienes ya renovaron su piel con nosotros.
           </p>
         </div>
 
-        {/* Grid de Reseñas / Tarjetas Glassmorphic */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {reviews.map((rev) => (
             <div
               key={rev.id}
-              className="bg-slate-900/80 backdrop-blur-xl rounded-3xl p-8 border border-purple-500/20 shadow-2xl hover:border-pink-500/40 hover:shadow-pink-500/10 transition-all duration-300 flex flex-col justify-between relative group"
+              className="bg-white rounded-3xl p-8 border border-[#DCE2E9] shadow-md hover:shadow-2xl hover:border-[#FFA5C4] transition-all duration-300 flex flex-col justify-between relative group"
             >
-              <Quote className="absolute top-6 right-6 w-10 h-10 text-purple-500/10 group-hover:text-pink-500/20 transition-colors pointer-events-none" />
+              <Quote className="absolute top-6 right-6 w-10 h-10 text-[#8A96C7]/20 group-hover:text-[#FFA5C4]/30 transition-colors pointer-events-none" />
 
               <div>
-                {/* Calificación en Estrellas */}
-                <div className="flex items-center gap-1 text-amber-400 mb-6 bg-slate-950/60 px-3 py-1.5 rounded-full w-max border border-purple-500/20">
+                <div className="flex items-center gap-1 text-amber-400 mb-6 bg-[#FFF4F8] px-3 py-1.5 rounded-full w-max border border-[#DCE2E9]">
                   {[...Array(rev.rating)].map((_, i) => (
                     <Star key={i} className="w-4 h-4 fill-current" />
                   ))}
-                  <span className="text-xs font-bold text-white ml-1">5.0</span>
+                  <span className="text-xs font-black text-[#3A2E4C] ml-1">
+                    5.0
+                  </span>
                 </div>
 
-                {/* Comentario */}
-                <p className="text-slate-300 text-sm leading-relaxed mb-6 italic">
+                <p className="text-[#3A2E4C]/80 text-sm leading-relaxed mb-6 italic font-medium">
                   "{rev.comment}"
                 </p>
               </div>
 
-              {/* Info de la Paciente */}
-              <div className="pt-4 border-t border-slate-800/80 flex items-center justify-between">
+              <div className="pt-4 border-t border-[#DCE2E9] flex items-center justify-between">
                 <div>
-                  <p className="font-bold text-white text-base">{rev.name}</p>
-                  <p className="text-xs text-pink-400 font-semibold mt-0.5">
+                  <p className="font-serif font-extrabold text-[#3A2E4C] text-base">
+                    {rev.name}
+                  </p>
+                  <p className="text-xs text-[#A782C8] font-bold mt-0.5">
                     {rev.treatment}
                   </p>
                 </div>
-                <div className="flex items-center gap-1 text-[11px] text-emerald-400 font-medium bg-emerald-500/10 px-2.5 py-1 rounded-full border border-emerald-500/20">
-                  <CheckCircle2 className="w-3.5 h-3.5" />
+                <div className="flex items-center gap-1 text-[11px] text-[#A782C8] font-extrabold bg-[#FFF4F8] px-3 py-1 rounded-full border border-[#DCE2E9]">
+                  <CheckCircle2 className="w-3.5 h-3.5 text-[#FFA5C4]" />{" "}
                   Verificada
                 </div>
               </div>
