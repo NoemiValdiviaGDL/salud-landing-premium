@@ -1,4 +1,4 @@
-import HeroPic from "../assets/images/hero-pic.webp";
+import HeroPic from "../assets/images/hero-pic.jpg";
 import HilosPic from "../assets/images/hilos.jpg";
 import BotoxPic from "../assets/images/botox-gallery.avif"; // Corregida extensión .jpg
 import PiernasPic from "../assets/images/piernas-gallery.jpg";

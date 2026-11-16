@@ -12,7 +12,7 @@ export default function Navbar({ brand }) {
     { name: "Antes y Después", href: "#galeria" },
     { name: "Sobre Mí", href: "#sobre-mi" },
     { name: "Reseñas", href: "#resenas" },
-    { name: "FAQ", href: "#faq" },
+    { name: "Preguntas Frecuentes", href: "#faq" },
   ];
 
   return (
